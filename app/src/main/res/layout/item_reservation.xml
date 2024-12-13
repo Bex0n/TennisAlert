@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Date Text -->
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="16sp"
+        android:padding="4dp" />
+
+    <!-- Courts Text -->
+    <TextView
+        android:id="@+id/text_courts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Courts"
+        android:textSize="14sp"
+        android:padding="4dp" />
+
+    <!-- Remove Button -->
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:layout_gravity="end"
+        android:padding="4dp" />
+</LinearLayout>

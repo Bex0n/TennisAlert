@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <!-- Main Fragment -->
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.tennisalert.fragment.MainFragment"
+        android:label="Main Fragment"
+        tools:layout="@layout/fragment_main">
+
+        <!-- Navigate to Add Reservation Dialog -->
+        <action
+            android:id="@+id/action_MainFragment_to_AddReservationDialogFragment"
+            app:destination="@id/AddReservationDialogFragment" />
+    </fragment>
+
+    <!-- Add Reservation Dialog Fragment -->
+    <dialog
+        android:id="@+id/AddReservationDialogFragment"
+        android:name="com.example.tennisalert.fragment.AddReservationDialogFragment"
+        android:label="Add Reservation"
+        tools:layout="@layout/dialog_add_reservation" />
+</navigation>

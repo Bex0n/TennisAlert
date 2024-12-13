@@ -1,0 +1,64 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Gradle files
+.gradle/
+build/
+**/build/
+!gradle-wrapper.jar
+
+# Local configuration file (SDK paths, etc.)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio specific files
+.idea/
+*.iml
+
+# Generated files
+/captures/
+.externalNativeBuild/
+*.apk
+*.ap_
+/output.json
+
+# Keystore files (Security-sensitive)
+*.jks
+
+# Dependency directories
+/.cxx/
+/node_modules/
+/.bundles/
+
+# Miscellaneous
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.lock
+
+# Files created by JetBrains IDEs
+*.idea/
+*.ipr
+*.iws
+*.idea/
+
+# Operating System files
+Thumbs.db
+*.DS_Store
+
