@@ -125,13 +125,18 @@ class MeraFetcher() : Fetcher {
     private val client = OkHttpClient()
     private val cache = mutableMapOf<Pair<LocalDate, Int>, CourtSchedule>()
     private val BASE_URL = "https://kluby.org/klub/wkt-mera/dedykowane/grafik?data_grafiku=%s&dyscyplina=1&strona=%d"
-    private val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'")
+    private val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
 
     override fun fetch(date: LocalDate, page: Int): CourtSchedule {
+        println("Call to fetch")
+        println(date)
+        println(page)
         val key = date to page
         cache[key]?.let { return it }
         // Build & execute the HTTP request
         val url = BASE_URL.format(date.format(dateFormatter), page)
+        print(date.format(dateFormatter))
+        println(url)
         val request = Request.Builder().url(url).build()
         val response = client.newCall(request).execute()
         if (!response.isSuccessful) throw Exception("Network request failed")
